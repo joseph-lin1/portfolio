@@ -1,0 +1,274 @@
+/*Body*/
+body{
+	margin: 0;
+	position: relative;
+	z-index: -1;
+}
+
+/*Header*/
+.header-section{
+	background: url("bg.jpg");
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: fixed;
+	background-size: cover;
+	border-bottom: 1px solid #e8e8e8;
+	position: relative;
+	z-index: 10;
+}
+	/*Left side of Header*/
+	.left-side{
+		width: 50%;
+		height: 100%;
+		float: left;
+	}
+	.left-side-title{
+		font-size: 30px;
+		padding-bottom: 10px;
+	}
+
+	.left-content, .right-content{
+		display: none;
+		text-align: center;
+		padding-top: 30vh;
+		max-width: 70%;
+		margin: 0 auto;
+	}
+		/*Hamburger for Left Side*/
+
+
+		.hamburger-container, .arrow-container{
+		 	position: relative;
+		 	top: 47vh;
+		 	left: 0;
+		 	width: 100%;
+		 	height: auto;
+		 	text-align: center;
+		}
+
+		.hamburger-img, .arrow-img{
+			width: 50px;
+			height: 50px;
+		}
+
+
+	/*Right Side of Header*/
+
+	.right-side{
+		width: 50%;
+		height: 100%; 
+		float: left;
+	}
+
+
+	.right-content{
+		display: none;
+		color: white;
+	}
+	.works-button{
+		border: 1px solid #e8e8e8;
+		background: #e8e8e8;
+		padding: 8px 15px;
+		border-radius: 3px;
+		margin-top: 50px;
+	}
+	.work-button:hover{
+		text-decoration: none;
+	}
+
+/*Main Body*/
+
+.main-body{
+	width: 84%;
+	float: right;
+	margin: 0 auto;
+}
+.main-body-container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+	/*Side Bar*/
+	.side-nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 15%;
+		height: 100%;
+		z-index: 0;
+
+		border-right: 1px solid  #e8e8e8;
+	}
+	.logo{
+		width: 100%;
+	}
+	
+	.sidebar-list-container{
+		margin-top: 120px;
+	}
+
+	.nav-item{
+		list-style-type:none;
+		padding: 0;
+	    text-align: center;
+	    color: gray;
+	}
+
+	ul{
+		padding: 0;
+	}
+	hr{
+		width: 80%;
+		border: 1px solid #e8e8e8 !important;
+	}
+
+
+
+
+
+	/*WORK*/
+
+	    /*PROJECT IMAGES*/
+	    .portfolio-container{
+	        text-align: center;
+	        background: white;
+	        padding: 10px;
+	        color: #FFF;
+	        margin-bottom: 35px;
+	        -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+			-moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+			box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+			color: black;
+	    }
+	    .portfolio-image {
+	        width: 100%;
+	    }
+	    /*Portfolio Hover*/
+	    .portfolio-container:hover p h4{
+		    visibility: visible;
+		    opacity: 1;
+		    width: 100%;
+		    height: 100%;
+	    }
+	    .imgWrap:hover .imgDescription {
+		    visibility: visible;
+		    opacity: 1;
+		    width: 100%;
+		    height: 100%;
+		    padding: 15% 20%;
+		    background: url("img/11.jpg");
+		    background-size: 100%;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background: rgba(0,0,0,0.8);
+	    }
+
+		.imgWrap {
+		    position: relative;
+		    width: 100%;
+		}
+
+	    .imgDescription {
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    background: rgba(29, 106, 154, 0.72);
+		    color: #fff;
+		    visibility: hidden;
+		    transition: opacity 1.2s ease-in-out;
+		    opacity: 0;
+	    }
+		/*Work Buttons to alter between Front End, FUll Stack, and All*/
+		.work-nav1, .work-nav2, .work-nav3{
+			float: left;
+			width: 13%;
+			text-align: center;
+			margin: 20px 10%;
+			border: 1px solid #BABABA;
+			background: #e8e8e8;
+			padding: 5px 15px;
+			color: gray;
+		}
+
+
+
+
+	/*About and skill item*/
+	.skill-item-container{
+		text-align: center;
+	}
+
+	.bio{
+		margin: 10px 10px 50px 10px;
+	}
+
+	.progress{
+		margin: 0 auto;
+		width: 70%;
+	}
+
+
+
+	/*contact*/
+
+	.contact-send-button{
+		padding: 10px;
+		background: #e8e8e8;
+		border: 1px solid #e8e8e8;
+		border-radius: 8px;
+		margin: 10px;
+		color: gray;
+	}
+	.contact-input{
+		width: 30%;
+		float: left;
+		padding: 5px;
+	}
+
+
+	.contact-input-textarea{
+		width: 93.5%;
+		padding: 5px 5px 300px 5px;
+	}
+
+	.contact-input, .contact-input-textarea{
+		margin: 10px;
+		border: 1px solid #e8e8e8;
+		background: #EBEBEB;
+		border-radius: 8px;
+	}
+
+	.contact-input::placeholder, .contact-input-textarea::placeholder{
+		color: #A1A1A1;
+		padding: 5px;
+	}
+
+
+	/*All three sections*/
+	.contact, .about-me, .works{
+		margin: 10% 0 3% 0;
+	}
+
+	.section-title{
+		margin: 10px 10px 30px 10px;
+	}
+
+
+/*Footer*/
+.footer{
+	width: 100%;
+	height: auto;
+	background: #1C1C1C;
+	clear: both;
+	color: #A8A8A8;
+	padding-bottom: 15px;
+}
+.footer-content{
+	margin: 30px 0;
+}
+
+
