@@ -5,6 +5,22 @@ body{
 	z-index: -1;
 }
 
+a:link {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:active {
+    color: gray;
+}
+
 /*Header*/
 .header-section{
 	background: url("bg.jpg");
@@ -73,6 +89,7 @@ body{
 		padding: 8px 15px;
 		border-radius: 3px;
 		margin-top: 50px;
+		color: gray;
 	}
 	.work-button:hover{
 		text-decoration: none;
@@ -97,7 +114,7 @@ body{
 		left: 0;
 		width: 15%;
 		height: 100%;
-		z-index: 0;
+		z-index: 1;
 
 		border-right: 1px solid  #e8e8e8;
 	}
@@ -129,7 +146,9 @@ body{
 
 
 	/*WORK*/
-
+	.works{
+		position: relative;
+	}
 	    /*PROJECT IMAGES*/
 	    .portfolio-container{
 	        text-align: center;
@@ -269,6 +288,69 @@ body{
 }
 .footer-content{
 	margin: 30px 0;
+}
+
+
+	.side-nav-hamburger{
+		display: none;
+		position: fixed;
+		top:30px;
+		left:40px;
+		z-index: 2;
+
+	}
+
+	.mobile-hamburger{
+		width: 50px;
+		height: 50px;
+		border: 2px solid gray;
+	}
+.no-display{
+	display: none !important;
+}
+.yes-display{
+	display: block !important;
+}
+/*media query*/
+@media (max-width:767px){
+	.side-nav{
+		display: none;
+		width: 50%;
+		z-index: 1;
+		background: white;
+	}
+	.main-body{
+		width: 100%;
+	}
+	.side-nav-hamburger{
+		display: block;
+	}
+	.logo{
+		display: none;
+	}
+
+	.contact-input{
+		float: left;
+		width: 93.5%;
+		padding: 5px;
+	}
+	.left-content, .right-content{
+		display: block;
+		position: relative;
+		padding-top: 25vh;
+
+	}
+	.hamburger-img, .arrow-img{
+		display: none;
+		}
+	.left-side-title{
+		font-size: 20px;
+	}
+	.header-section{
+		height: 85vh;
+	}
+
+
 }
 
 

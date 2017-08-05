@@ -8,10 +8,14 @@ function scrollNav() {
     $('.'+theClass).parent('li').addClass('active');
     //Animate
     $('html, body').stop().animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 30
+        scrollTop: $( $(this).attr('href') ).offset().top - 10
     }, 400);
     return false;
   });
   $('.scrollTop a').scrollTop();
 }
 scrollNav();
+
+$(".side-nav-hamburger").on("click",function(){
+  $(".side-nav").toggleClass("no-display, yes-display");
+})
