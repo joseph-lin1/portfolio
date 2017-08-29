@@ -3,6 +3,7 @@ body{
 	margin: 0;
 	position: relative;
 	z-index: -1;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 a:link {
@@ -40,10 +41,12 @@ a:active {
 		height: 100%;
 		float: left;
 	}
-	.left-side-title{
-		font-size: 30px;
+	.left-side-title, .right-side-title{
+		font-size: 22px;
 		padding-bottom: 10px;
+		font-family: 'Roboto Slab', serif  !important;
 	}
+
 
 	.left-content, .right-content{
 		display: none;
@@ -65,8 +68,8 @@ a:active {
 		}
 
 		.hamburger-img, .arrow-img{
-			width: 50px;
-			height: 50px;
+			width: 30px;
+			height: 30px;
 		}
 
 
@@ -77,7 +80,6 @@ a:active {
 		height: 100%; 
 		float: left;
 	}
-
 
 	.right-content{
 		display: none;
@@ -116,7 +118,7 @@ a:active {
 		height: 100%;
 		z-index: 1;
 
-		border-right: 1px solid  #e8e8e8;
+		border-right: 1px solid  rgba(30,30,30,0.1);
 	}
 	.logo{
 		width: 100%;
@@ -133,11 +135,24 @@ a:active {
 	    color: gray;
 	}
 
+	.side-nav-hamburger{
+		display: none;
+		position: fixed;
+		top:10px;
+		left:10px;
+		z-index: 2;
+
+	}
+	.mobile-hamburger{
+		width: 35px;
+		height: 35px;
+		border: 2px solid lightgray;
+	}
 	ul{
 		padding: 0;
 	}
 	hr{
-		width: 80%;
+		width: 90%;
 		border: 1px solid #e8e8e8 !important;
 	}
 
@@ -217,18 +232,55 @@ a:active {
 
 
 	/*About and skill item*/
+
+	.bio-container{
+		margin-bottom: 50px;
+	}
 	.skill-item-container{
 		text-align: center;
+		opacity: 1;
+	}
+
+	.skill-item-container:hover{
+		opacity: 0.6;
+	}
+	.skill-icon{
+		width:100px;
+		height: 100px;
 	}
 
 	.bio{
-		margin: 10px 10px 50px 10px;
+		margin: 10px 10px 40px 10px;
+		line-height: 1.5;
+	}
+	#download-button-container{
+		margin-top: 20px;
+	}
+	#download-button{
+		color: white !important;
+		background: #3B3B3B;
+		border-radius: 0 !important;
+		padding: 8px 20px;
+		opacity: 1;
 	}
 
+	#download-button:hover{
+		opacity: 0.8;
+	}
 	.progress{
 		margin: 0 auto;
 		width: 70%;
+		height: 12px !important;
 	}
+	/*progress bar*/
+	.progress-bar-success{
+		background-color: black !important; 
+	}
+	
+	.skill-title {
+			font-weight: bold;
+	}
+
 
 
 
@@ -274,6 +326,8 @@ a:active {
 
 	.section-title{
 		margin: 10px 10px 30px 10px;
+		font-family: 'Roboto Slab', serif  !important;
+		font-size: 30px;
 	}
 
 
@@ -291,20 +345,17 @@ a:active {
 }
 
 
-	.side-nav-hamburger{
-		display: none;
-		position: fixed;
-		top:30px;
-		left:40px;
-		z-index: 2;
 
-	}
+.right-footer, .left-footer{
+	width: 50%;
+	float: left;
+}
 
-	.mobile-hamburger{
-		width: 50px;
-		height: 50px;
-		border: 2px solid gray;
-	}
+.footer-content{
+	margin: 30px auto;
+	width: 70%;
+}
+
 .no-display{
 	display: none !important;
 }
@@ -312,45 +363,61 @@ a:active {
 	display: block !important;
 }
 /*media query*/
+
+@media (max-width:1199px){
+	.bio-container{
+		text-align: center;
+	}
+}
 @media (max-width:767px){
+	/*Media Side Nav*/
 	.side-nav{
 		display: none;
 		width: 50%;
 		z-index: 1;
 		background: white;
 	}
-	.main-body{
-		width: 100%;
-	}
+
 	.side-nav-hamburger{
 		display: block;
 	}
-	.logo{
-		display: none;
+
+	/*Media Body*/
+	.main-body{
+		width: 100%;
 	}
 
+	/*Media Contact*/
 	.contact-input{
 		float: left;
 		width: 93.5%;
 		padding: 5px;
 	}
-	.left-content, .right-content{
-		display: block;
-		position: relative;
-		padding-top: 25vh;
 
-	}
-	.hamburger-img, .arrow-img{
-		display: none;
-		}
-	.left-side-title{
-		font-size: 20px;
-	}
+	/*Media Header*/
 	.header-section{
 		height: 85vh;
 	}
 
+	.left-content, .right-content{
+		display: block !important;
+		position: relative;
+		padding-top: 25vh;
+	}
 
+	.hamburger-img, .arrow-img{
+		display: none;
+	}
+
+	.left-side-title{
+		font-size: 20px;
+	}
+	/*Media Footer*/
+	.footer{
+		text-align: center;
+	}
+
+	.right-footer, .left-footer{
+		width: 100% !important;
+	}
 }
-
-
